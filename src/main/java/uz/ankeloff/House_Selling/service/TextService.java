@@ -29,7 +29,7 @@ public class TextService {
         switch (text) {
             case "/start" -> {
                 sendMessage.setText("Assalamu alaykum bizning uy bozor botimizga xush kelibsiz!!! \n" +
-                        "Bizning bo'timiz sizga uy \uD83C\uDFE0 sotish va sotib olishingizda yordam beradi");
+                        "Bizning botimiz sizga uy \uD83C\uDFE0 sotish va sotib olishingizda yordam beradi");
                 userService.registerUser(user);
                 ReplyKeyboardMarkup replyKeyboardMarkup = userService.menuPage();
                 sendMessage.setReplyMarkup(replyKeyboardMarkup);
